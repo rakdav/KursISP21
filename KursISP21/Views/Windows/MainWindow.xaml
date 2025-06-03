@@ -12,7 +12,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <ui:TitleBar Grid.Row="0">
+        <!--<ui:TitleBar Grid.Row="0">
             <ui:TitleBar.Icon>
                 <ui:ImageIcon Source="/Assets/icon256.png"/>
             </ui:TitleBar.Icon>
@@ -23,6 +23,39 @@
             </ui:NavigationView.Header>
         </ui:NavigationView>
         <ui:SnackbarPresenter x:Name="SnackbarPresenter" Grid.Row="1"
-                             VerticalAlignment="Stretch" />
+                             VerticalAlignment="Stretch" />-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="10*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" Grid.Row="0">
+                <Label>Домой</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="1">
+                <Label>Авторы</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="2">
+                <Label>Заказчики</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="3">
+                <Label>Издания</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="4">
+                <Label>Типографии</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="5">
+                <Label>Заказы</Label>
+            </StackPanel>
+        </Grid>
+        <Frame Grid.Column="1" Grid.Row="1" x:Name="PageFrame"/>
     </Grid>
 </Window>
