@@ -1,4 +1,5 @@
 ﻿using KursISP21.Model;
+using KursISP21.Views.Pages;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -21,5 +22,36 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
         KursovayaContext db = new KursovayaContext();
+        PageFrame.Navigate(new StartPage());
+    }
+
+    private void Label_MouseDown(object sender, MouseButtonEventArgs e)
+    {
+        PageFrame.Navigate(new StartPage());
+    }
+
+    private void Label_MouseDown_1(object sender, MouseButtonEventArgs e)
+    {
+        PageFrame.Navigate(new AuthorPage());
+    }
+
+    private void Label_MouseDown_2(object sender, MouseButtonEventArgs e)
+    {
+        PageFrame.Navigate(new CustomerPage());
+    }
+
+    private void Label_MouseDown_3(object sender, MouseButtonEventArgs e)
+    {
+        PageFrame.Navigate(new PrintinghousePage());
+    }
+
+    private void StackPanel_MouseDown(object sender, MouseButtonEventArgs e)
+    {
+        PageFrame.Navigate(new OrderPage());
+    }
+        
+    private void Label_MouseDown_5(object sender, MouseButtonEventArgs e)
+    {
+        PageFrame.Navigate(new CustomerPage());
     }
 }

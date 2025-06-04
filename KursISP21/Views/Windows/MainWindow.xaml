@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:KursISP21"
         xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" WindowState="Maximized">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -38,22 +38,22 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <StackPanel Orientation="Horizontal" Grid.Row="0">
-                <Label>Домой</Label>
+                <Label MouseDown="Label_MouseDown">Домой</Label>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Grid.Row="1">
-                <Label>Авторы</Label>
+                <Label MouseDown="Label_MouseDown_1">Авторы</Label>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Grid.Row="2">
                 <Label>Заказчики</Label>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Grid.Row="3">
-                <Label>Издания</Label>
+                <Label MouseDown="Label_MouseDown_2">Издания</Label>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Grid.Row="4">
-                <Label>Типографии</Label>
+                <Label MouseDown="Label_MouseDown_3">Типографии</Label>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Grid.Row="5">
-                <Label>Заказы</Label>
+                <Label MouseDown="Label_MouseDown_5">Заказы</Label>
             </StackPanel>
         </Grid>
         <Frame Grid.Column="1" Grid.Row="1" x:Name="PageFrame"/>

@@ -4,9 +4,7 @@
              xmlns:local="clr-namespace:KursISP21"
              xmlns:system="clr-namespace:System;assembly=System.Runtime"
              xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
-             Startup="OnStartup"
-             Exit="OnExit"
-             DispatcherUnhandledException="OnDispatcherUnhandledException">
+             StartupUri="Views\Windows\MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
