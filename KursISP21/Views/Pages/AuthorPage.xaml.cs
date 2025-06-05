@@ -24,5 +24,10 @@ namespace KursISP21.Views.Pages
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+           // MainWindow.baseFrame.Navigate(new AuthorEditPage(new Model.Author()));
+        }
     }
 }

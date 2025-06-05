@@ -18,11 +18,13 @@ namespace KursISP21;
 /// </summary>
 public partial class MainWindow : Window
 {
+    public static Frame baseFrame;
     public MainWindow()
     {
         InitializeComponent();
         KursovayaContext db = new KursovayaContext();
         PageFrame.Navigate(new StartPage());
+        baseFrame = PageFrame;
     }
 
     private void Label_MouseDown(object sender, MouseButtonEventArgs e)

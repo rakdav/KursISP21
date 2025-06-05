@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KursISP21.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,22 @@ namespace KursISP21.Views.Pages
     /// </summary>
     public partial class AuthorEditPage : Page
     {
-        public AuthorEditPage()
+        public Author Author { get; private set; }
+        public AuthorEditPage(Author author)
         {
             InitializeComponent();
+            Author = author;
+            DataContext = Author;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            using (KursovayaContext db = new KursovayaContext())
+            {
+                db.Authors.AddAsync(Author);
+                db.SaveChangesAsync();
+                this.NavigationService.GoBack();
+            }
         }
     }
 }

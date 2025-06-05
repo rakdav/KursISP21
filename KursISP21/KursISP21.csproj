@@ -9,11 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\author.jpg" />
+    <None Remove="Assets\home.jpg" />
     <None Remove="Assets\icon256.png" />
+    <None Remove="Assets\Мастер пол.ico" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+    <PackageReference Include="MaterialDesignThemes" Version="5.2.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -31,12 +35,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Helpers\" />
-    <Folder Include="ViewModels\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <Resource Include="Assets\author.jpg" />
+    <Resource Include="Assets\home.jpg" />
     <Resource Include="Assets\icon256.png" />
+    <Resource Include="Assets\Мастер пол.ico" />
   </ItemGroup>
 
 </Project>

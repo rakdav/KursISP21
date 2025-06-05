@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:KursISP21"
         xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" WindowState="Maximized">
+        Title="Издательство" Height="450" Width="800" WindowState="Maximized"
+        Icon="/Assets/Мастер пол.ico">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -37,11 +38,16 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <StackPanel Orientation="Horizontal" Grid.Row="0">
-                <Label MouseDown="Label_MouseDown">Домой</Label>
+            <StackPanel Orientation="Horizontal" Grid.Row="0" VerticalAlignment="Center"
+                        HorizontalAlignment="Center" MouseDown="Label_MouseDown">
+                <Image Source="/Assets/home.jpg"/>
+                <TextBlock FontSize="20" VerticalAlignment="Center" Text="Домой"/>
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Grid.Row="1">
-                <Label MouseDown="Label_MouseDown_1">Авторы</Label>
+            <StackPanel Orientation="Horizontal" Grid.Row="1" MouseDown="Label_MouseDown_1"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center">
+                <Image Source="/Assets/author.jpg" />
+                <TextBlock FontSize="20" VerticalAlignment="Center" Text="Авторы"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Grid.Row="2">
                 <Label>Заказчики</Label>
